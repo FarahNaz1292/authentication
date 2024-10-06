@@ -1,10 +1,11 @@
 import React from "react";
+import Pic from "../assets/images/nesting-01.png";
 
 const Profile = () => {
   return (
     <>
       <div>
-        <h1>tifisot971@adambra.com</h1>
+        <img src={Pic} alt="" />
       </div>
     </>
   );

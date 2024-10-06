@@ -3,7 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { faEnvelope, faUser } from "@fortawesome/free-regular-svg-icons";
-import { faHashtag, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faLock } from "@fortawesome/free-solid-svg-icons";
 
 const Signup = () => {
   const [fullName, setFullName] = useState("");
@@ -52,15 +52,15 @@ const Signup = () => {
     <div>
       {isOtpSend ? (
         <div className="form-container">
-          <h2 className="sub-heading">Verify Opt</h2>
+          <h2 className="sub-heading">Verify Otp</h2>
           <form onSubmit={handleOtp}>
-            <FontAwesomeIcon icon={faHashtag} />
             <input
               type="text"
+              className="input-fields"
               placeholder="Enter Otp"
               onChange={(e) => setOtp(e.target.value)}
             />
-            <button className="form-button">Click to verify</button>
+            <button className="form-button"> verify</button>
           </form>
         </div>
       ) : (
